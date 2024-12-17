@@ -11,3 +11,9 @@ app.listen(port, ()=>{
     
 })
 
+app.get('/bacheca',(req , res)=>{
+    res.json({
+        id: posts.length,
+        posts: posts
+    });
+})
